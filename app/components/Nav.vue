@@ -3,13 +3,22 @@
 </script>
 
 <template>
-  <div>
-    <header class="sticky top-0 z-50 space-x-1 border-b p-4 shadow-md bg-gray-100">
+  <div class="navbar">
+    <nav class="sticky top-0 z-50 space-x-1 border-b p-4 shadow-md bg-gray-100">
       <NuxtLink to="/" class="text-3xl font-semibold">Cartrader</NuxtLink>
-    </header>
+    </nav>
   </div>
 </template>
 
-<style lang="scss" scoped>
-
+<style scoped>
+.navbar{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.navbar nav{
+  position: sticky;
+  width:100%;
+  top: 0;
+}
 </style>

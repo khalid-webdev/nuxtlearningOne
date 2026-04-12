@@ -1,23 +1,26 @@
+<script setup>
+const route = useRoute();
+const {cars} = useCars();
+
+const car = computed(()=>{
+  return cars.find((c)=>c.id===parseInt(route.params.id))
+})
+if(!car.value){
+  throw createError({
+    status:404,
+    message:`Cars of ID no ${route.params.id} is not found!`
+  })
+}
+definePageMeta({
+  layout:"custom"
+})
+</script>
 <template>
-<!-- CAR DETAIL PAGE -->
-<div
-  class="mx-auto mt-4 max-w-7xl space-y-4 px-4 xs:px-8 sm:px-10 lg:px-16 pb-16 w-3/5"
->
-  <div>
-    <!-- CAR HERO -->
-    <CarDetailsHero/>
-  </div>
-  <!-- CAR HERO -->
-  <!-- CAR ATTRIBUTES -->
-  <CarDetailsAttributes/>
-  <!-- CAR ATTRIBUTES -->
-  <!-- CAR DESCRISPTION -->
-  <CarDetailsDescription/>
-  <!-- CAR DESCRISPTION -->
-  <!-- CAR CONTACT -->
-  <CarDetailsContact />
-  <!-- CAR CONTACT -->
-</div>
-<!-- CAR DETAIL PAGE   -->
+    <div>
+      <CarDetailsHero :car="car"/>
+    </div>
+    <CarDetailsAttributes :features="car.features"/>
+    <CarDetailsDescription :description="car.description"/>
+    <CarDetailsContact />
 
 </template>
