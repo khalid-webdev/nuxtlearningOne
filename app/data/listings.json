@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name": "Toyota Mirai",
+        "make": "Toyota",
+        "model": "Mirai",
+        "price": "50,000",
+        "year": 2017,
+        "city": "Los Angelos",
+        "url": "https://www.cnet.com/a/img/resize/eac004b37b182b088ada4800c676330ff88b9308/hub/2020/12/15/bccdf7a4-1401-4cf6-b11b-eada47ca36ea/ogi1-2021-toyota-mirai-017.jpg?auto=webp&fit=crop&height=675&width=1200",
+        "seats": 5,
+        "miles": "5000",
+        "features": "No Accidents, Low KM, Vehicle Detailed, Leather Interior",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio et laboriosam!"
+      },
+      {
+        "id": 2,
+        "name": "Maserati Levante",
+        "make": "Maserati",
+        "model": "Levante",
+        "price": "125,000",
+        "year": 2015,
+        "city": "Toronto",
+        "url": "https://images.edealer.ca/2/176467922.jpeg",
+        "seats": 5,
+        "miles": "53,666",
+        "features": "No Accidents, Low KM, Vehicle Detailed, Leather Interior",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio et laboriosam! Numquam ut rem, blanditiis est rerum tenetur maxime delectus"
+      },
+      {
+        "id": 3,
+        "name": "Land Rover",
+        "make": "rangerover",
+        "model": "rover",
+        "price": "95,000",
+        "year": 2015,
+        "city": "Toronto",
+        "url": "https://hips.hearstapps.com/hmg-prod/images/2025-land-rover-defender-octa-117-6787c5548e855.jpg",
+        "seats": 5,
+        "miles": "43,238",
+        "features": "No Accidents, Low KM, Vehicle Detailed, Leather Interior",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio et laboriosam! Numquam ut rem, blanditiis est rerum tenetur maxime delectus"
+      }
+
+]
